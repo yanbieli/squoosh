@@ -50,16 +50,19 @@
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.15;
   letter-spacing: 0.04em;
-  color: var(--white);
+  color: #2c1a27;
   text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .hero-subtitle {
   margin: 0;
   font-size: 1.05rem;
   letter-spacing: 0.06em;
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(44, 26, 39, 0.82);
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .logo {
@@ -70,9 +73,11 @@
 
 .load-img {
   position: relative;
-  color: var(--white);
+  color: #5f2341;
   font-style: italic;
   font-size: 1.2rem;
+  font-weight: 700;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
 .blob-svg {
@@ -119,7 +124,8 @@
   composes: unbutton from global;
   text-decoration: underline;
   font: inherit;
-  color: inherit;
+  color: #5f2341;
+  font-weight: 700;
 }
 
 .demos-container {
