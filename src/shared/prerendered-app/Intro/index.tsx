@@ -249,6 +249,10 @@ export default class Intro extends Component<Props, State> {
               height="162"
             />
           </h1>
+          <div class={style.heroCopy}>
+            <h2 class={style.heroTitle}>极速图片压缩</h2>
+            <p class={style.heroSubtitle}>在浏览器中压缩、比较并导出图像</p>
+          </div>
           <div class={style.loadImg}>
             {showBlobSVG && (
               <svg
@@ -285,13 +289,13 @@ export default class Intro extends Component<Props, State> {
                 </svg>
               </button>
               <div>
-                <span class={style.dropText}>Drop </span>OR{' '}
+                <span class={style.dropText}>拖放图片 </span>或{' '}
                 {supportsClipboardAPI ? (
                   <button class={style.pasteBtn} onClick={this.onPasteClick}>
-                    Paste
+                    粘贴
                   </button>
                 ) : (
-                  'Paste'
+                  '粘贴'
                 )}
               </div>
             </div>
@@ -310,7 +314,7 @@ export default class Intro extends Component<Props, State> {
           </svg>
           <div class={style.contentPadding}>
             <p class={style.demoTitle}>
-              Or <strong>try one</strong> of these:
+              或者<strong>试试这些示例</strong>：
             </p>
             <ul class={style.demos}>
               {demos.map((demo, i) => (
@@ -355,10 +359,10 @@ export default class Intro extends Component<Props, State> {
             <SlideOnScroll>
               <div class={style.infoContent}>
                 <div class={style.infoTextWrapper}>
-                  <h2 class={style.infoTitle}>Small</h2>
+                  <h2 class={style.infoTitle}>更小</h2>
                   <p class={style.infoCaption}>
-                    Smaller images mean faster load times. Squoosh can reduce
-                    file size and maintain high quality.
+                    更小的图片意味着更快的加载速度。Squoosh
+                    能在保持高画质的同时显著减小文件体积。
                   </p>
                 </div>
                 <div class={style.infoImgWrapper}>
@@ -380,11 +384,9 @@ export default class Intro extends Component<Props, State> {
             <SlideOnScroll>
               <div class={style.infoContent}>
                 <div class={style.infoTextWrapper}>
-                  <h2 class={style.infoTitle}>Simple</h2>
+                  <h2 class={style.infoTitle}>更简单</h2>
                   <p class={style.infoCaption}>
-                    Open your image, inspect the differences, then save
-                    instantly. Feeling adventurous? Adjust the settings for even
-                    smaller files.
+                    打开图片，查看压缩效果，然后一键保存。想进一步压缩？调整高级参数，文件还能更小。
                   </p>
                 </div>
                 <div class={style.infoImgWrapper}>
@@ -406,10 +408,10 @@ export default class Intro extends Component<Props, State> {
             <SlideOnScroll>
               <div class={style.infoContent}>
                 <div class={style.infoTextWrapper}>
-                  <h2 class={style.infoTitle}>Secure</h2>
+                  <h2 class={style.infoTitle}>更安全</h2>
                   <p class={style.infoCaption}>
-                    Worried about privacy? Images never leave your device since
-                    Squoosh does all the work locally.
+                    担心隐私？Squoosh
+                    全部在本地完成处理，图片不会上传到任何服务器。
                   </p>
                 </div>
                 <div class={style.infoImgWrapper}>
